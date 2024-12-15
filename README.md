@@ -23,27 +23,27 @@ The SNN was trained in 2 stages:
 The result of network training is the distribution of synaptic weights. The weight distribution of _S4_ group allows a clear visual representation on the graph:   
 ![initial weight distribution](initial_weight_distribution.svg)
 
-In the experiments, excitatory neurons of the third layer, according to the _‘STDP + all-LTD’_ rule, were divided into 3 subsets, each of which was respon-sible for classifying one of the 3 classes of data (the subset number coincided with the class number). The synapses of _S4_ group are associated to the three 10-element subsets (10 × 3 = 30) of the third layer excitatory neurons.
-Visually, the figure above shows a densely distributed subsystems of lighter weights (_‘light’_ weights at the bottom of the graph) and a less densely distributed subsystems of heavier weights (_‘heavy’_ weights at the top).
-The densities of the _‘light’_ weight subsystem and the _‘heavy’_ weight subsystem within the subgroup are quite constant. The analysis showed that different distributions of weights in subgroups are directly related to different degrees of class definition accuracy.
-Each weights subgroup is associated with the definition of one class, and the best classification accuracy was shown by the subgroup in which:
-•	_‘light’_ weights are distributed so that they occupy a relatively wider range,
-•	the distribution of _‘light’_ weights (without taking into account weights with 0 value) is close to a uniform distribution,
-•	the sum of the _‘heavy’_ weights is maximal,
-•	dividing the weights into _‘heavy’_ and _‘light’_ ones is most effective if the number of _‘heavy’_ weights is about 10% of the number of all weights (the rest are the _‘light’_ ones). This result is consistent with [our previous research](https://doi.org/10.1016/j.neunet.2022.09.003) regarding the importance of weights for classification accuracy.    
+In the experiments, excitatory neurons of the third layer, according to the _‘STDP + all-LTD’_ rule, were divided into 3 subsets, each of which was respon-sible for classifying one of the 3 classes of data (the subset number coincided with the class number). The synapses of _S4_ group are associated to the three 10-element subsets (10 × 3 = 30) of the third layer excitatory neurons.   
+Visually, the figure above shows a densely distributed subsystems of lighter weights (_‘light’_ weights at the bottom of the graph) and a less densely distributed subsystems of heavier weights (_‘heavy’_ weights at the top).   
+The densities of the _‘light’_ weight subsystem and the _‘heavy’_ weight subsystem within the subgroup are quite constant. The analysis showed that different distributions of weights in subgroups are directly related to different degrees of class definition accuracy.   
+Each weights subgroup is associated with the definition of one class, and the best classification accuracy was shown by the subgroup in which:   
+•	_‘light’_ weights are distributed so that they occupy a relatively wider range,   
+•	the distribution of _‘light’_ weights (without taking into account weights with 0 value) is close to a uniform distribution,   
+•	the sum of the _‘heavy’_ weights is maximal,   
+•	dividing the weights into _‘heavy’_ and _‘light’_ ones is most effective if the number of _‘heavy’_ weights is about 10% of the number of all weights (the rest are the _‘light’_ ones). This result is consistent with [our previous research](https://doi.org/10.1016/j.neunet.2022.09.003) regarding the importance of weights for classification accuracy.       
 
-The best value for the point separating _‘light’_ and _‘heavy’_ weights was determined as the inflection point of the weight density distribution curve of the subgroup that had the maximum sum of _‘heavy’_ weights (the inflection point mentioned below refers specifically to this class).
+The best value for the point separating _‘light’_ and _‘heavy’_ weights was determined as the inflection point of the weight density distribution curve of the subgroup that had the maximum sum of _‘heavy’_ weights (the inflection point mentioned below refers specifically to this class).    
 ***
 __Our assumption__
-Synapses have different roles in performing classification:
-- ones of them maintain a minimum potential level in an excitatory neurons (synapses with _'light'_ weights),
-- the remaining force excitatory neurons to ‘fire’, sharply increasing their potential above the threshold (synapses with _'heavy'_ weight).
+Synapses have different roles in performing classification:    
+- ones of them maintain a minimum potential level in an excitatory neurons (synapses with _'light'_ weights),    
+- the remaining force excitatory neurons to ‘fire’, sharply increasing their potential above the threshold (synapses with _'heavy'_ weight).    
 
-In other words, the most of the amount of information in the synaptic weights structure is located in the upper (_'heavy'_) weights subsystem:
+In other words, the most of the amount of information in the synaptic weights structure is located in the upper (_'heavy'_) weights subsystem:    
 
 ![structure of information](information_in_weight_structure.jpg)
 ***
-This distribution of the amount of information allows replacing all the weights of the _'light'_ weight subsystem with a single value:
+This distribution of the amount of information allows replacing all the weights of the _'light'_ weight subsystem with a single value:    
 
 ![weight reduction](reduction_of_weight_distribution.svg)
 
