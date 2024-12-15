@@ -37,7 +37,7 @@ Each weights subgroup is associated with the definition of one class, and the be
 
 The best value for the point separating _‘light’_ and _‘heavy’_ weights was determined as the inflection point of the weight density distribution curve of the subgroup that had the maximum sum of _‘heavy’_ weights (the inflection point mentioned below refers specifically to this class).    
 ***
-__Our assumption__
+### __Our assumption__    
 Synapses have different roles in performing classification:    
 - ones of them maintain a minimum potential level in an excitatory neurons (synapses with _'light'_ weights),    
 - the remaining force excitatory neurons to ‘fire’, sharply increasing their potential above the threshold (synapses with _'heavy'_ weight).    
