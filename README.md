@@ -24,8 +24,11 @@ The result of network training is the distribution of synaptic weights. The weig
 ![initial weight distribution](initial_weight_distribution.svg)
 
 In the experiments, excitatory neurons of the third layer, according to the _‘STDP + all-LTD’_ rule, were divided into 3 subsets, each of which was respon-sible for classifying one of the 3 classes of data (the subset number coincided with the class number). The synapses of _S4_ group are associated to the three 10-element subsets (10 × 3 = 30) of the third layer excitatory neurons.   
+
 Visually, the figure above shows a densely distributed subsystems of lighter weights (_‘light’_ weights at the bottom of the graph) and a less densely distributed subsystems of heavier weights (_‘heavy’_ weights at the top).   
+
 The densities of the _‘light’_ weight subsystem and the _‘heavy’_ weight subsystem within the subgroup are quite constant. The analysis showed that different distributions of weights in subgroups are directly related to different degrees of class definition accuracy.   
+
 Each weights subgroup is associated with the definition of one class, and the best classification accuracy was shown by the subgroup in which:   
 •	_‘light’_ weights are distributed so that they occupy a relatively wider range,   
 •	the distribution of _‘light’_ weights (without taking into account weights with 0 value) is close to a uniform distribution,   
