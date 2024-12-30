@@ -8,7 +8,7 @@ Abstract: The article presents the results of research on the synaptic weights d
 ***
 __The code is written in Python 3.8 using the [Brian 2.0](https://brian2.readthedocs.io/en/2.0/index.html) framework.__   
 ***
-The work is devoted to the study of the structure of synaptic weights of a spiking neural network (SNN). The SNN architecture used for the 2-layer case was described in our [previous paper](https://ieeexplore.ieee.org/document/10582358). In this paper, a 3-layer architecture was used:    
+The work is devoted to the study of the structure of synaptic weights of a spiking neural network (SNN). The SNN architecture used for the 2-layer case was described in our [previous paper](https://ieeexplore.ieee.org/document/10582358). In this paper, a similar but 3-layer architecture was used:    
 
 ![3-layer SNN architecture](3-layer_SNN_architecture.jpg)
 
