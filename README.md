@@ -6,7 +6,7 @@ Antonov, D.I. "Systems theory principles for investigating the spiking neural ne
 ***
 Abstract: The article presents the results of research on the synaptic weights distribution obtained by applying a new local learning rule for spiking neural networks (SNNs). The developed method uses a combination of Hebbian rules: spike-time dependent plasticity (STDP) and long-term depression (all-LTD). The synaptic weights distribution of a 3-layer SNN trained according to the com-bined rule allowed, after training, to restructure the synaptic weights distribution of SNN based on the principles of Systems Theory.
 ***
-__The code is written in Python 3.8 using the Brian 2.0 framework.__   
+__The code is written in Python 3.8 using the [Brian 2.0](https://brian2.readthedocs.io/en/2.0/index.html) framework.__   
 ***
 The work is devoted to the study of the structure of synaptic weights of a spiking neural network (SNN). The SNN architecture used for the 2-layer case was described in our [previous paper](https://ieeexplore.ieee.org/document/10582358). In this paper, a 3-layer architecture was used:    
 
