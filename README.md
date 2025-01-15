@@ -10,7 +10,7 @@ __The code is written in Python 3.8 using the [Brian 2.0](https://brian2.readthe
 ***
 The study is devoted to the study of the structure of synaptic weights of a spiking neural network (SNN). The SNN architecture used for the 2-layer case was described in our [previous paper](https://ieeexplore.ieee.org/document/10582358). In this paper, a similar but 3-layer architecture was used:    
 
-![3-layer SNN architecture](3-layer_SNN_architecture.jpg)
+
 
 The SNN was trained using the _'STDP+all-LTD'_ method, based on two biologically plausible learning rules: canonical Hebbian spike-timing-dependent plasticity (STDP) and all-time long-term depression (all-LTD).    
 For a description of the _'STDP+all-LTD'_ method, see [code and description](https://github.com/dmitryanton68/learning_rule_STDP_all-LTD).       
