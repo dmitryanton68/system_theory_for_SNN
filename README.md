@@ -1,5 +1,5 @@
 # __Systems theory principles for investigating the spiking neural network trained with the Hebbian rule__   
-The code illustrates the result reported at the [Neuroinformatics-2024](https://neuroinfo.ru/index.php/en/) conference and published in [Proceedings of conference](https://www.researchgate.net/publication/385349463_Systems_Theory_principles_for_investigating_the_spiking_neural_network_trained_with_the_Hebbian_rule).
+The code illustrates the result reported at the [Neuroinformatics-2024](https://neuroinfo.ru/index.php/en/) conference and published in [the Proceedings of the conference](https://www.researchgate.net/publication/385349463_Systems_Theory_principles_for_investigating_the_spiking_neural_network_trained_with_the_Hebbian_rule).
 ***
 ### ARTICLE:   
 Antonov, D.I. "Systems theory principles for investigating the spiking neural network trained with the Hebbian rule." Proceedings of XXVI International Conference on Artificial Neural Networks NEUROINFORMATICS-2024. MIPT (Moscow Institute of Physics and Technology). Moscow. Russia. 2024 October. pp. 33-42.   
@@ -8,7 +8,7 @@ Abstract: The article presents the results of research on the synaptic weights d
 ***
 __The code is written in Python 3.8 using the [Brian 2.0](https://brian2.readthedocs.io/en/2.0/index.html) framework.__   
 ***
-The work is devoted to the study of the structure of synaptic weights of a spiking neural network (SNN). The SNN architecture used for the 2-layer case was described in our [previous paper](https://ieeexplore.ieee.org/document/10582358). In this paper, a similar but 3-layer architecture was used:    
+The study is devoted to the study of the structure of synaptic weights of a spiking neural network (SNN). The SNN architecture used for the 2-layer case was described in our [previous paper](https://ieeexplore.ieee.org/document/10582358). In this paper, a similar but 3-layer architecture was used:    
 
 ![3-layer SNN architecture](3-layer_SNN_architecture.jpg)
 
@@ -20,7 +20,7 @@ The SNN was trained in 2 stages:
 - in the second stage, the synaptic group _S4_ was trained according to the combined Hebbian rule _‘STDP + all-LTD’_ (_Model_STDP+all-LTD_ _ _(weights_plane+compression).ipynb_ file).
 
 ***
-The result of network training is the distribution of synaptic weights. The weight distribution of _S4_ group allows a clear visual representation on the graph:   
+The weight distribution of _S4_ group allows a clear visual representation on the graph:   
 ![initial weight distribution](initial_weight_distribution.svg)
 
 In the experiments, excitatory neurons of the third layer, according to the _‘STDP + all-LTD’_ rule, were divided into 3 subsets, each of which was respon-sible for classifying one of the 3 classes of data (the subset number coincided with the class number). The synapses of _S4_ group are associated to the three 10-element subsets (10 × 3 = 30) of the third layer excitatory neurons.   
